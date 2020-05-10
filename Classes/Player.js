@@ -7,7 +7,7 @@ class Player{
         this.y= 50;
         
         this.direction = "right";
-        this.life = 100;
+        this.life = 2;
         this.div = this.show();
         this.lifeCounter = this.displayLife();
     }
@@ -32,6 +32,10 @@ class Player{
                     break;
                 case "left":
                     style.left =`${oldLeft - 10}px`;
+                    break;
+                case "stop":
+                    style.left = `${oldLeft}px`;
+                    style.top = `${oldTop}px`;
                     break;
             }
         }
@@ -93,26 +97,3 @@ class Player{
     
     }
 }
-
-//document.addEventListener('keyup', (event)=>{
-        
-    //         const oldTop = parseInt(this.div.style.top);
-    //         const oldLeft = parseInt(this.div.style.left);
-    //         //console.log(event.keyCode);
-    //         switch(event.keyCode){
-    //             case 40:
-    //                  this.div.style.top = `${oldTop + 10}px`;
-    //                 break;
-    //             case 37:
-    //                  this.div.style.left =`${oldLeft - 10}px`;
-    //                 break; 
-    //             case 38:
-    //                 this.div.style.top = `${oldTop - 10}px`;
-    //                 break;
-    //             case 39:
-    //                 this.div.style.left =`${oldLeft+ 10}px`; 
-    //         }
-    //         const position = [this.div.style.top, this.div.style.left]
-    //         console.log(position);
-    //         return position
-    //  })

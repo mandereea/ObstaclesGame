@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player cu obstacole Static</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"/>
+    <style>
+        @font-face {
+            font-family: symbols;
+            src: url("WebSymbols-Regular.otf");
+        }
+        body{
+            display: flex;
+            flex-direction: row;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .heart-alive{
+            color:teal;
+            font-family: symbols;
+            margin-left: 10px;
+        }
+        .heart-dead{
+            color:coral;
+            font-family:symbols;
+            margin-left:10px;
+        }
+        .game-over{
+            position: absolute;
+            z-index: 1;
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            background-color: coral;
+        }
+        .reset-btn{
+            background-color:teal;
+            color: blanchedalmond;
+            padding: 10px;
+            border: none;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="ClassesS/PlayerS.js"></script>
+    <script src="ClassesS/ObstacleS.js"></script>
+    <script src="ClassesS/GameS.js"></script>
+    <script src="appS.js"></script>
+</body>
+</html>
