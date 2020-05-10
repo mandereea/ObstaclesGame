@@ -3,8 +3,8 @@ class Player{
         this.gameContainer = gameContainer;
         this.size = 20;
         this.color = color;
-        this.x = 40;
-        this.y= 40;
+        this.x = 50;
+        this.y= 50;
         
         this.direction = "right";
         this.life = 2;

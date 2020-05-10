@@ -10,7 +10,7 @@ class Obstacle{
         //getting gameContainer surface
         const mapWidth = this.gameContainer.getBoundingClientRect().width;
         //creating an array to contain the obstacles (dom objects)
-        for (let i = 0; i < mapWidth; i++){   //for rendering obstacles at multiple of 20(a player step/player size) coordinates
+        for (let i = 1; i < mapWidth; i++){   //for rendering obstacles at multiple of 20(a player step/player size) coordinates
             if(i%20 === 0){
             this.indexesArray.push(i)
             }
